@@ -12,6 +12,11 @@ library(readr)
 library(lubridate)
 library(dplyr)
 
+# here I scan all .docx files in the directory and read them
+temp <- list.files(pattern="*.docx")
+patients <- data.frame("шифр" = 1:length(temp))
+patients_in <- sapply(temp, read_docx)
+
 ################## staying in #####################
 
 ALL_DATA <- data.frame(шифр = NA, дата = NA, номер_суток = NA, время = NA, тип = NA, общее_состояние = NA, сознание = NA, ЧДД = NA, Spo2 = NA, Сист_АД = NA, Диаст_АД = NA, ЧСС = NA, NEWS = NA)
