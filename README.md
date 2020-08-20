@@ -32,9 +32,16 @@ patients$Диастолическое_давление[i] <- str_sub(str_extract
 
 Из 600+ карт получилось сделать две табдицы с данными 
 1. При поступлении - более подробные измерения
+
+[Скрипт для поступления](https://github.com/sabitova-fatima/COVID_patient_cards/blob/master/check_in_data.R)
+
 2. Ежедневные исследования (до 10-15 для каждого пациента)
 
-https://github.com/sabitova-fatima/COVID_patient_cards/blob/master/pictures/Frame%201.png
+[Скрипт для ежедневных осмотров](https://github.com/sabitova-fatima/COVID_patient_cards/blob/master/staying_in_data.R)
+
+Итог:
+
+![](https://github.com/sabitova-fatima/COVID_patient_cards/blob/master/pictures/результаты.png)
 
 В дальнейшем будут собраны также другие данные (в том числе анализы крови КТ, так как информация о них представлена в более сложных для автоматизации форматах).
 
