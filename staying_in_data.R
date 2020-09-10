@@ -4,6 +4,7 @@ setwd("C:/Users/User/Desktop/patients")
 # linux
 setwd("~/patients")
 
+# use install.packages("___") if not.installed
 library(docxtractr)
 library(readxl)
 library(qdapTools)
